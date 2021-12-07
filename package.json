@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/bgag/any-db-jdbc",
   "dependencies": {
-    "jdbc": "^0.3.1"
+    "jdbc": "^0.7.6",
+    "promiseify": "^0.1.2"
   },
   "devDependencies": {
     "any-db": "^2.1.0",
