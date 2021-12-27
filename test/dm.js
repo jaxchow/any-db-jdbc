@@ -52,7 +52,7 @@ describe('dm8', function () {
     anyDbPromise(config.url).then(function (conn) {
       const query = promiseify(conn.query.bind(conn))
       query('select * from "SYSDBA"."DDD"').then(function(result){
-        // console.log(result)
+        console.log(result)
         // assert.equal(result.rows.length,[].length)
         done()
       })
@@ -71,6 +71,7 @@ describe('dm8', function () {
       })
     }) 
   })
+  
 
   it('update  "SYSAUDIT"."DDD" ',function(done){
     const anyDbPromise = promiseify(anyDb.createConnection)
